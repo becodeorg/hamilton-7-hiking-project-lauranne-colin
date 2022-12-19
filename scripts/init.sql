@@ -1,2 +1,2 @@
-GRANT ALL PRIVILEGES ON `%`.* TO 'colin-lauranne'@'%';
+GRANT ALL PRIVILEGES ON `%`.* TO 'models-user'@'%';
 FLUSH PRIVILEGES;
