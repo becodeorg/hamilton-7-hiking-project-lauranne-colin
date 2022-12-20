@@ -1,0 +1,21 @@
+{
+  "name": "hamilton-7-hiking-project-lauranne-colin",
+  "version": "1.0.0",
+  "description": "temp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "up": "docker compose up --build",
+    "db":"docker compose down && sudo rm -rf dbdata"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/becodeorg/hamilton-7-hiking-project-lauranne-colin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/becodeorg/hamilton-7-hiking-project-lauranne-colin/issues"
+  },
+  "homepage": "https://github.com/becodeorg/hamilton-7-hiking-project-lauranne-colin#readme"
+}
