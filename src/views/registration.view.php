@@ -39,7 +39,7 @@
 <ul class="flex flex-col">
     <?php foreach ($hikes as $hike) : ?>
         <li class="my-5 flex justify-start ml-5">
-            <a href="/hike?codeTwo=<?= $hike['hikeID']; ?>">
+            <a href="/hike?code=<?= $hike['hikeID']; ?>">
                 <span class="uppercase bg-lime-300 p-2 text-xs rounded-xl"><?= $hike['hikeName'] ?></span>
             </a>
         </li>

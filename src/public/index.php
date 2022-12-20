@@ -15,9 +15,9 @@ if ($url === '/' || $url === '') {
 }
 
 if ($url === 'hike') {
-    $codeTwo = $_GET['codeTwo'];
+    $code = $_GET['code'];
     $hikeController = new HikeController();
-    $hikeController->show($codeTwo);
+    $hikeController->show($code);
 }
 
 if ($url === 'debug') {

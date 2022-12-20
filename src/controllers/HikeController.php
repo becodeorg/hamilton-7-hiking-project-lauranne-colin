@@ -20,13 +20,13 @@ class HikeController
         include 'views/includes/footer.view.php';
     }
 
-    public function show(string $codeTwo): void
+    public function show(string $code): void
     {
-        if (empty($codeTwo)) {
+        if (empty($code)) {
             throw new Exception("Product code was not provided.");
         }
 
-        $hike = $this->productModel->find($codeTwo);
+        $hike = $this->productModel->find($code);
 
         include 'views/includes/header.view.php';
         include 'views/hike.view.php';
