@@ -23,7 +23,39 @@ if ($url === 'hike') {
 if ($url === 'debug') {
     var_dump($_SERVER);
 } 
+
+
+
+
+if ($url === 'logout') {
+    $authController  = new AuthController();
+    $authController->logout();
+}
+if ($url === 'login') {
+    $authController = new AuthController();
+
+    if ($method === 'GET') {
+        $authController->showLoginForm();
+    }
+
+    if ($method === 'POST') {
+        $authController->login($_POST);
+    }
+}
+
+if ($url === 'registration') {
+    $authController = new AuthController();
+
+    if ($method === 'GET') {
+        $authController->showRegistrationForm();
+    }
+
+    if ($method === 'POST') {
+        $authController->register($_POST);
+    }
+}
 ?>
+
 
 <head>
     <meta charset="UTF-8">

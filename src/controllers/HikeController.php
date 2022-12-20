@@ -15,10 +15,9 @@ class HikeController
     {
         $hikes = $this->productModel->findAll();
 
-        // include 'views/includes/header.view.php';
-        include 'views/header.view.php';
+        include 'views/includes/header.view.php';
         include 'views/index.view.php';
-        // include 'views/includes/footer.view.php';
+        include 'views/includes/footer.view.php';
     }
 
     public function show(string $codeTwo): void
@@ -29,9 +28,8 @@ class HikeController
 
         $hike = $this->productModel->find($codeTwo);
 
-        include 'views/header.view.php';
+        include 'views/includes/header.view.php';
         include 'views/hike.view.php';
-        // include 'views/product.view.php';
-        // include 'views/includes/footer.view.php';
+        include 'views/includes/footer.view.php';
     }
 }
