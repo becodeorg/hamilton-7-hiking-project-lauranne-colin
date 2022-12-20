@@ -6,7 +6,7 @@ class Hike extends Database
     {
         try {
            return $this->query(
-                'SELECT hikeID, hikeName, hikeDescription FROM hikes LIMIT 25'
+                'SELECT hikeID, hikeName, hikeDescription, hikeDate, hikeUpdate, distance, duration, elevation_gain FROM hikes LIMIT 25'
             )->fetchAll();
 
         } catch (Exception $e) {
@@ -15,13 +15,13 @@ class Hike extends Database
         }
     }
 
-    public function find(string $codeTwo): array|false
+    public function find(string $code): array|false
     {
         try {
             return $this->query(
-                "SELECT hikeID, hikeName, hikeDescription FROM hikes WHERE hikeID = ?",
+                "SELECT hikeID, hikeName, hikeDescription, hikeDate, hikeUpdate, distance, duration, elevation_gain FROM hikes WHERE hikeID = ?",
                 [
-                    $codeTwo
+                    $code
                 ]
             )->fetch();
 
