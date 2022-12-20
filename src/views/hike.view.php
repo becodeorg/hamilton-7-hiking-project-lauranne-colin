@@ -1,6 +1,4 @@
-<script src="https://cdn.tailwindcss.com"></script>
 <style> 
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); 
     h2, p, .hikeDetails {
         font-family: 'Montserrat', sans-serif;
     }
@@ -21,7 +19,7 @@
     <div class="duration">Durée du parcours</div>
     <div class="durationData"><?= $hike['duration'] ?></div>
     <div class="elevation">Dénivelé positif</div>
-    <div class="elevationData"><?= $hike['elevation_gain'] ?></div>
+    <div class="elevationData"><?= $hike['elevation_gain'] ?>m</div>
 </div>
 
 <style>

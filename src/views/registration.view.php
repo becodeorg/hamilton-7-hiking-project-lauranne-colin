@@ -1,5 +1,3 @@
-<script src="https://cdn.tailwindcss.com"></script>
-<style> @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); </style>
 <style>
     form, h2 {
         font-family: 'Montserrat', sans-serif;
