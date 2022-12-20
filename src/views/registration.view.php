@@ -2,7 +2,7 @@
 
 <form action="registration" method="post">
     <div>
-        <label for="username">Username</label>
+        <label for="nickname">Username</label>
         <input type="text" name="username">
     </div>
     <div>

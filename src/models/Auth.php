@@ -5,7 +5,7 @@ class Auth extends Database
     public function create(string $username, string $email, string $password): void
     {
         if (!$this->query(
-            "INSERT INTO users(username, email, password) VALUES (?, ?, ?)",
+            "INSERT INTO Users(nickname, email, password) VALUES (?, ?, ?)",
             [
                 $username,
                 $email,
@@ -19,7 +19,7 @@ class Auth extends Database
     public function find(string $username): array
     {
         if (!$user = $this->query(
-            "SELECT * FROM users WHERE username = ?",
+            "SELECT * FROM Users WHERE nickname = ?",
             [
                 $username,
             ]

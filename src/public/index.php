@@ -6,7 +6,7 @@ session_start();
 require 'vendor/autoload.php';
 
 $url = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
-// $method = $_SERVER['REQUEST_METHOD'];
+ $method = $_SERVER['REQUEST_METHOD'];
 
 
 if ($url === '/' || $url === '') {
@@ -19,12 +19,6 @@ if ($url === 'hike') {
     $hikeController = new HikeController();
     $hikeController->show($codeTwo);
 }
-
-if ($url === 'debug') {
-    var_dump($_SERVER);
-} 
-
-
 
 
 if ($url === 'logout') {
