@@ -18,9 +18,17 @@
 
 <div class="flex justify-center">
 <form class="flex flex-col" action="registration" method="post">
+<div class="input flex flex-row mb-5 w-fit">
+        <label for="firstname" class="w-28 label uppercase bg-lime-300 p-2 text-xs"> Firstname</label>
+        <input type="firstname" name="firstname" placeholder="..." class="input border-stone-200 border-2 w-36 pl-2 text-xs">
+    </div>
     <div class="input flex flex-row mb-5 w-fit">
-        <label for="username" class="w-28 label uppercase bg-lime-300 p-2 text-xs">Username</label>
-        <input type="text" name="username" placeholder="..." class="input border-stone-200 border-2 w-36 pl-2 text-xs">
+        <label for="lastname" class="w-28 label uppercase bg-lime-300 p-2 text-xs"> Lastname</label>
+        <input type="lastname" name="lastname" placeholder="..." class="input border-stone-200 border-2 w-36 pl-2 text-xs">
+    </div>
+    <div class="input flex flex-row mb-5 w-fit">
+        <label for="nickname" class="w-28 label uppercase bg-lime-300 p-2 text-xs">Username</label>
+        <input type="text" name="nickname" placeholder="..." class="input border-stone-200 border-2 w-36 pl-2 text-xs">
     </div>
     <div class="input flex flex-row mb-5 w-fit">
         <label for="email" class="w-28 label uppercase bg-lime-300 p-2 text-xs">Email</label>

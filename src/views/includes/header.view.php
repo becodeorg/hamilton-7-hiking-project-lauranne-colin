@@ -25,7 +25,7 @@
     <nav class="pb-3">
         <ul class="text-sm flex flex-row justify-center">
             <li class="mx-2"><a href="/"><i class="fa-solid fa-house"></i><span class="hidden">Home</span></a></li>
-            <?php if (empty($_SESSION['user'])): ?>
+            <?php if (empty($_SESSION['User'])): ?>
                 <li class="mx-2"><a href="/login"><i class="fa-solid fa-user-check"></i><span class="hidden">Login</span></a></li>
                 <li class="mx-2"><a href="/registration"><i class="fa-solid fa-user-plus"></i><span class="hidden">Register</span></a></li>
             <?php else: ?>
@@ -33,8 +33,8 @@
             <?php endif; ?>
         </ul>
     </nav>
-    <?php if (!empty($_SESSION['user'])): ?>
-        <span>Hello <?= $_SESSION['user']['username'] ?></span>
+    <?php if (!empty($_SESSION['User'])): ?>
+        <span>Hello <?= $_SESSION['User']['nickname'] ?></span>
     <?php endif; ?>
 </header>
 

@@ -2,11 +2,13 @@
 
 class Auth extends Database
 {
-    public function create(string $username, string $email, string $password): void
+    public function create(string $firstname, string $lastname, string $username, string $email, string $password): void
     {
         if (!$this->query(
-            "INSERT INTO Users(nickname, email, password) VALUES (?, ?, ?)",
+            "INSERT INTO Users(firstname, lastname,nickname, email, password) VALUES (?, ?, ?,?,?)",
             [
+                $firstname,
+                $lastname,
                 $username,
                 $email,
                 $password
