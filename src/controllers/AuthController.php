@@ -64,7 +64,7 @@ class AuthController
             throw new Exception("Failed login attempt : wrong password");
         }
 
-        $_SESSION['user'] = [
+        $_SESSION['User'] = [
             "ID" => $user["ID"],
             'firstname' => $user['lastname'],
             'lastname' => $user['firstname'],
