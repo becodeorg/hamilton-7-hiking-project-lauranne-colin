@@ -13,12 +13,19 @@ $url = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 if ($url === '/' || $url === '') {
     $hikeController = new HikeController();
     $hikeController->index();
+    $tagController = new TagController();
+    $tagController->tagwhere();
 }
 
 if ($url === 'hike') {
     $code = $_GET['code'];
     $hikeController = new HikeController();
     $hikeController->show($code);
+}
+if( $url === 'tagName'){
+    $codeTag= $_GET['codeTag'];
+    $tagController= new TagController();
+    $tagController->showTag($codeTag);
 }
 
 
