@@ -13,14 +13,14 @@
         h1 {
             font-family: 'Mystery Quest', cursive;
         }
-        nav {
+        nav, span {
             font-family: 'Montserrat', sans-serif;
         }
     </style>
     <title>Running Up That Hill</title>
 </head>
 <body>
-<header>
+<header class="mb-5">
     <h1 class="text-5xl flex pt-12 pb-6 justify-center text-center">RUNNING UP</br>THAT HILL</h1>
     <nav class="pb-3">
         <ul class="text-sm flex flex-row justify-center">
@@ -34,7 +34,7 @@
         </ul>
     </nav>
     <?php if (!empty($_SESSION['User'])): ?>
-        <span>Hello <?= $_SESSION['User']['nickname'] ?></span>
+        <span class="ml-5 my-5 lowercase">Hello, <?= $_SESSION['User']['nickname'] ?>.</span>
     <?php endif; ?>
 </header>
 
