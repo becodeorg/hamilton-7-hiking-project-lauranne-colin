@@ -14,10 +14,10 @@ class ComposerStaticInitf042e09d0111c36e05fd06b2c98484b5
         'Composer\\Autoload\\ComposerStaticInitf042e09d0111c36e05fd06b2c98484b5' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Database' => __DIR__ . '/../..' . '/models/Database.php',
-        'Product' => __DIR__ . '/../..' . '/models/Product.php',
         'Hike' => __DIR__ . '/../..' . '/models/Hike.php',
-        'ProductController' => __DIR__ . '/../..' . '/controllers/ProductController.php',
         'HikeController' => __DIR__ . '/../..' . '/controllers/HikeController.php',
+        'Tag' => __DIR__ . '/../..' . '/models/tagID.php',
+        'TagController' => __DIR__ . '/../..' . '/controllers/TagController.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
