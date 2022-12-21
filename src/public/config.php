@@ -1,6 +1,10 @@
 <?php
 try {
-    $conn = new PDO("mysql:host=188.166.24.55;dbname=hamilton-7-hiking-laco", 'hiking-laco', 'KqQxVnN4epZUWezV');
+    $conn = new PDO(
+        'mysql:host=' . getenv('DB_HOST') . ';dbname=' . getenv('DB_DATABASE'),
+        getenv('DB_USERNAME'),
+        getenv('DB_PASSWORD')
+    );
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     }
