@@ -15,6 +15,7 @@ return array(
     'Database' => $baseDir . '/models/Database.php',
     'Hike' => $baseDir . '/models/Hike.php',
     'HikeController' => $baseDir . '/controllers/HikeController.php',
+    'Profile' => $baseDir . '/controllers/Profile.php',
     'Tag' => $baseDir . '/models/tagID.php',
     'TagController' => $baseDir . '/controllers/TagController.php',
 );

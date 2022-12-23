@@ -35,7 +35,10 @@
     </nav>
     <?php if (!empty($_SESSION['User'])): ?>
         <span>Hello <?= $_SESSION['User']['nickname'] ?></span>
+        <a href="/profile">Go to your profile</a>
     <?php endif; ?>
+
+  
 </header>
 
 

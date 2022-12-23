@@ -16,7 +16,7 @@ class TagController
         $tags = $this->TagModel->displayTag();
 
         include 'views/index.view.php';
-        include 'views/includes/footer.view.php';
+        
     }
 
     public function showTag(string $codeTag): void
@@ -28,7 +28,19 @@ class TagController
         $tag = $this->TagModel->findTag($codeTag);
 
         include 'views/tag.view.php';
-        include 'views/includes/footer.view.php';
+      
     }
 
+    public function showAllTag(string $codeTag2): void
+    {
+        if (empty($codeTag2)) {
+            throw new Exception("Tag code was not provided.");
+        }
+
+        $tag2 = $this->TagModel->displayOneTag($codeTag2);
+        
+
+        include 'views/tag.view.php';
+    
+    }
 }

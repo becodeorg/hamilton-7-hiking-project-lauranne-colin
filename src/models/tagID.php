@@ -31,4 +31,19 @@ class Tag extends Database
             return [];
         }
     }
+    public function displayOneTag($codeTag2): array|false
+    {
+        try{
+            return $this->query(
+                'SELECT *  FROM hikes INNER JOIN TagHikes ON TagHikes.hikeID= hikes.hikeID INNER JOIN Tag ON TagHikes.tag_id=Tag.tag_id WHERE tagName= ?',
+                [
+                    $codeTag2
+                ]
+            )->fetchAll();
+        
+        } catch (Exception $e) {
+            echo $e->getMessage();
+            return [];
+        }
+    }
 }

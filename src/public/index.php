@@ -23,10 +23,15 @@ if ($url === 'hike') {
 }
 if( $url === 'tagName'){
     $codeTag= $_GET['codeTag'];
+    $codeTag2= $_GET['codeTag'];
     $tagController= new TagController();
     $tagController->showTag($codeTag);
+    $tagController->showAllTag($codeTag2);
 }
-
+if( $url=== 'profile'){
+    $profile= new Profile;
+    $profile->profile();
+}
 
 if ($url === 'logout') {
     $authController  = new AuthController();

@@ -31,8 +31,8 @@ class AuthController
 
         $_SESSION['User'] = [
             'ID' => $id,
-            'firstname' => $username,
-            'lastname' => $username,
+            'firstname' => $firstname,
+            'lastname' => $lastname,
             'nickname' => $username,
             'email' => $email
         ];
