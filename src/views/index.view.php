@@ -8,7 +8,7 @@
     <?php endforeach; ?>
 </ul>
 
-<ul class="hidden flex flex-wrap flex-row"> 
+<ul class=" flex flex-wrap flex-row"> 
     <!-- c'est hidden c'est normal qu'on ne le voie pas -->
     <!-- suffit de retirer le hidden et ça le fait réapparaître c'est magique -->
     <?php foreach ($tags as $tag) : ?>

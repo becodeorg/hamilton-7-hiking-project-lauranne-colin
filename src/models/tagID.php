@@ -6,8 +6,8 @@ class Tag extends Database
     {
         try {
            return $this->query(
-                'SELECT TagHikes.hikeID, TagHikes.tag_id, Tag.tagName FROM TagHikes INNER JOIN Tag ON TagHikes.tag_id=Tag.tag_id'
-            )->fetchAll();
+                'SELECT * FROM Tag'
+                )->fetchAll();
 
         } catch (Exception $e) {
             echo $e->getMessage();
