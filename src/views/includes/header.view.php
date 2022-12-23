@@ -36,6 +36,7 @@
     <?php if (!empty($_SESSION['User'])): ?>
         <span class="ml-5 my-5 lowercase">Hello, <?= $_SESSION['User']['nickname'] ?>.</span>
         <a href="/profile">Go to your profile</a>
+        <a href="/addHikes"><div><p>Add an Hike</p></div></a>
     <?php endif; ?>
 
   

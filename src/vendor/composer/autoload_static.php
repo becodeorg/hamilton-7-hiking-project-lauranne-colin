@@ -7,6 +7,8 @@ namespace Composer\Autoload;
 class ComposerStaticInitf042e09d0111c36e05fd06b2c98484b5
 {
     public static $classMap = array (
+        'Add' => __DIR__ . '/../..' . '/models/AddHike.php',
+        'AddhikeControllers' => __DIR__ . '/../..' . '/controllers/AddhikeController.php',
         'Auth' => __DIR__ . '/../..' . '/models/Auth.php',
         'AuthController' => __DIR__ . '/../..' . '/controllers/AuthController.php',
         'ComposerAutoloaderInitf042e09d0111c36e05fd06b2c98484b5' => __DIR__ . '/..' . '/composer/autoload_real.php',

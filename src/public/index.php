@@ -33,6 +33,16 @@ if( $url=== 'profile'){
     $profile= new Profile;
     $profile->profile();
 }
+if( $url ==='addHikes'){
+    $add=new AddhikeControllers;
+    if ($method === 'GET') {
+        $add->showAddHikes();
+    }
+
+    if ($method === 'POST') {
+        $add->addhikes($_POST);
+    }
+}
 
 if ($url === 'logout') {
     $authController  = new AuthController();

@@ -6,6 +6,8 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Add' => $baseDir . '/models/AddHike.php',
+    'AddhikeControllers' => $baseDir . '/controllers/AddhikeController.php',
     'Auth' => $baseDir . '/models/Auth.php',
     'AuthController' => $baseDir . '/controllers/AuthController.php',
     'ComposerAutoloaderInitf042e09d0111c36e05fd06b2c98484b5' => $vendorDir . '/composer/autoload_real.php',
