@@ -34,8 +34,9 @@
         </ul>
     </nav>
     <?php if (!empty($_SESSION['User'])): ?>
-        <span class="ml-5 my-5 lowercase">Hello, <?= $_SESSION['User']['nickname'] ?>.</span>
-        <a href="/profile">Go to your profile</a>
+        <span class="ml-5 my-5">Salutations, <?= $_SESSION['User']['nickname'] ?>.</span>
+        </br>
+        <a class='ml-5 my-5 text-stone-400 text-xs italic lowercase' href="/profile">Consulter votre profil</a>
         <a href="/addHikes"><div><p>Add an Hike</p></div></a>
     <?php endif; ?>
 

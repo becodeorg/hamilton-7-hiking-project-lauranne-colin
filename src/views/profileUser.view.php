@@ -1,29 +1,17 @@
 
 
         
-<h2>Profil Page</h2>
-
-<p>Hello <?= $_SESSION['User']['nickname'] ?></p>
-<section>
-    <div>
+<h2 class="m-5 uppercase">Votre compte</h2>
+    <div class="m-5">
         <p>
-        Your Nickname :  <?= $_SESSION['User']['nickname'] ?>
+            Nom :  <?= $_SESSION['User']['lastname'] ?>
         </p>
-    </div>
-    <div>
         <p>
-            Your Firstname :  <?= $_SESSION['User']['firstname'] ?>
+            Prénom :  <?= $_SESSION['User']['firstname'] ?>
         </p>
-    </div>
-    <div>
         <p>
-            Your Lastname :  <?= $_SESSION['User']['lastname'] ?>
+            Email :  <?= $_SESSION['User']['email'] ?> 
         </p>
-    </div>
-    <div>
-        <p>
-            Your Email :  <?= $_SESSION['User']['email'] ?> 
-            <span>change email</span>
-        </p>
+        <button class='mt-5'>Modifier l'email</button>
     </div>
 </section>
