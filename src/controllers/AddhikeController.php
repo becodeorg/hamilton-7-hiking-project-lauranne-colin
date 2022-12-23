@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 class AddhikeControllers{
 
-    private Add $authModel;
+    private Add $addModel;
 
     public function __construct()
     {
@@ -23,7 +23,7 @@ class AddhikeControllers{
         $duration=htmlspecialchars($input['duration']);
         $distance= htmlspecialchars($input['distance']);
         $elevation = htmlspecialchars($input['elevation']);
-        $hikeDescription = htmlspecialchars($input['hikeDescription']);;
+        $hikeDescription = htmlspecialchars($input['hikeDescription']);
         $update = htmlspecialchars($input['update']);
 
         $this->addModel->addHike( $hikeName,$hikeDate,$duration,$distance,$elevation,$hikeDescription,$update);
