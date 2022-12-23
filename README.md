@@ -1,5 +1,5 @@
 # HIKING PROJECT
-Group project initiated by Becode.
+Group project initiated by [Becode](https://github.com/becodeorg).
 This project was made to consolidate the following things:
  - PHP 
  - MySQL
