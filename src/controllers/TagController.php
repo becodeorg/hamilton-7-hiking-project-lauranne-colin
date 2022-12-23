@@ -15,8 +15,7 @@ class TagController
     {
         $tags = $this->TagModel->displayTag();
 
-        include 'views/index.view.php';
-        
+        include 'views/taglist.view.php';
     }
 
     public function showTag(string $codeTag): void
@@ -26,6 +25,13 @@ class TagController
         }
 
         $tag = $this->TagModel->findTag($codeTag);
+
+        include 'views/includes/header.view.php';
+
+        ?>
+<h2 class="uppercase py-5 flex justify-center text-center">Nos parcours <?= $tag['tagName'] ?></h2>
+        
+        <?php
 
         include 'views/tag.view.php';
       
@@ -39,7 +45,6 @@ class TagController
 
         $tag2 = $this->TagModel->displayOneTag($codeTag2);
         
-
         include 'views/tag.view.php';
     
     }
